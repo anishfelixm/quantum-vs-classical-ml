@@ -2,6 +2,9 @@
 
 ### CNN
 
+run using :
+> python -m src.train.train_cnn
+
 Purpose:
 - Validate training pipeline
 - Confirm binary classification setup
