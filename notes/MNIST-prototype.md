@@ -14,7 +14,7 @@ Purpose:
 
 Model:
 - Simple CNN (2 conv layers, 2 FC layers)
-- 5 epochs
+- 5 epoch
 
 Dataset:
 - MNIST digits 0 vs 1
