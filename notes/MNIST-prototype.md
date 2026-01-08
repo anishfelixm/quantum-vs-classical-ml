@@ -1,5 +1,7 @@
 ## MNIST Prototype
 
+First create conda environment -> activate environment -> conda install pytorch and torchvision -> pip install requirements.txt
+
 ### CNN
 
 run using :
