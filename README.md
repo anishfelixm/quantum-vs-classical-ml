@@ -24,4 +24,4 @@ We evaluate both approaches across MNIST, BreastMNIST, and PlantVillage datasets
 | `/paper/`         | LaTeX source and submitted manuscript       |
 | `/supplementary/` | Reproducibility and appendix material papers|
 | `/datasets/`      | Datasets used in experiments                |
-| `/notes/`         | Weekly research logs                        |
+| `/notes/`         | Weekly research logs, survey notes          |
