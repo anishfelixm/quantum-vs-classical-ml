@@ -27,6 +27,38 @@ Observations:
 
 ![alt text](images/cnn-prototype.png)
 
+---
+
+### QML
+
+Model:
+- Variational Quantum Classifier (4 qubits)
+- Angle encoding + entangling layers
+
+Dataset:
+- MNIST (0 vs 1)
+- 200 samples (for simulator efficiency)
+
+Observations:
+- Slower training than CNN
+- Lower accuracy but stable convergence (50% to 60%). This accuracy isn't bad and is expected from the simple setup.
+- Is the low accuracy bad? no, if qml was better than cnn wouldn't it already have replaced traditional ml.
+- Confirms feasibility of QML pipeline
+
+![alt text](images/qml-prototype.png)
+
+Limitations:
+- Heavy dimensionality reduction
+- Simulator-only
+
+> Environment Note (QML)
+> - PennyLane 0.35.1 requires autoray <= 0.6.x
+> - autoray 0.8+ causes import failure due to missing NumpyMimic
+> - Environment pinned for reproducibility
+> - PennyLane requires float64 tensors
+> - Output and target shapes must match explicitly
+> - MSE loss used for expectation-value regression
+
+
 Next:
-- Implement Quantum model on same data
 - Reduce data fractions (10%, 25%)
