@@ -8,6 +8,14 @@ import numpy as np
 
 from src.models.qml_vqc import QuantumClassifier
 
+
+def train_vqc(*args):
+    return 0.0
+
+def train_qkernel(*args):
+    return 0.0
+
+
 def preprocess(x):
     # x: [1, 28, 28]
     x = F.avg_pool2d(x, kernel_size=7)  # → [1, 4, 4]
