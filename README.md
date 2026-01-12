@@ -25,3 +25,15 @@ We evaluate both approaches across MNIST, BreastMNIST, and PlantVillage datasets
 | `/supplementary/` | Reproducibility and appendix material papers|
 | `/datasets/`      | Datasets used in experiments                |
 | `/notes/`         | Weekly research logs, survey notes          |
+
+
+### personal 
+
+need to add this later
+| Metric               | Why                                    |
+| -------------------- | -------------------------------------- |
+| Std Dev across seeds | QML variance is a key discussion point |
+
+
+notebooks -> data analysis, plots
+python scripts in src/ -> scripts of the model
