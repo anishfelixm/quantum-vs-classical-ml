@@ -1,0 +1,36 @@
+The paper presents a quantum-enhanced approach to image classification based on the Quantum k-Nearest Neighbor (QKNN) algorithm, demonstrating that quantum parallelism can significantly reduce computational complexity while maintaining classification accuracy comparable to classical KNN methods.
+
+Quantum Machine Learning for Image Classification
+Proposes a quantum image classification framework based on the Quantum k-Nearest Neighbor (QKNN) algorithm.
+Aims to address the high computational cost of classical KNN, particularly for large-scale and high-dimensional image datasets.
+
+Quantum KNN-Based Architecture
+Employs a hybrid classical–quantum pipeline where image feature extraction is performed classically.
+Image features (color and texture descriptors) are encoded into quantum superposition states using amplitude encoding
+Quantum circuits are used to compute similarity between test and training images in parallel.
+
+Methodology and Algorithm Design
+Distance between images is computed using a controlled-swap (SWAP test) quantum circuit.
+Similarity values are stored using quantum amplitude estimation.
+A quantum minimum search algorithm (Dürr’s algorithm) identifies the k nearest neighbors with reduced search complexity.
+Final classification is obtained via a single quantum measurement and majority voting.
+
+Datasets and Experimental Evaluation
+Evaluated on two natural image datasets:
+Graz-01 (833 images, 2 classes: bikes and persons)
+Caltech-101 (2921 images across 9 selected classes)
+Feature vectors consist of combined color and texture descriptors with a dimensionality of 80.
+
+Performance and Complexity Analysis
+Achieved a maximum classification accuracy of 83.1% on Graz-01 and 78% on Caltech-101, comparable to classical methods.
+Demonstrates a theoretical complexity of O(√kM) for similarity search, offering a quadratic speedup over classical KNN search.
+Similarity computation complexity is reduced from O(M) (classical) to O(1) (quantum), assuming efficient state preparation.
+
+Comparison with Classical Approaches
+Maintains classification accuracy close to classical KNN-based methods while significantly improving computational efficiency.
+Particularly advantageous for large datasets where classical KNN becomes computationally prohibitive.
+
+Challenges and Future Directions
+Assumes efficient quantum state preparation, which remains a practical bottleneck on current hardware.
+Experiments are simulation-based, with no deployment on real quantum devices.
+Future work includes quantum-based feature extraction, improved accuracy through advanced descriptors, and validation on larger image datasets.
