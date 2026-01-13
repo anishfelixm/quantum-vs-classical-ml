@@ -108,6 +108,21 @@ Observed test accuracy across data fractions:
 3. Performance variance across random seeds is minimal, indicating high stability.
 4. Training time increases with dataset size, reflecting kernel method scalability limits.
 
+## Results Summary (CNN)
+
+Observed test accuracy across data fractions:
+
+- **10% training data**: ~99.80–99.86%
+- **25% training data**: ~99.85–99.90%
+- **50% training data**: ~99.70–99.95%
+- **100% training data**: ~99.85–100%
+
+### Key Observations
+1. CNN performance is comparable to classical baselines at higher data fractions.
+2. Under low-data conditions (10–25%), CNN exhibits slightly lower accuracy and higher variance.
+3. Training time increases significantly with dataset size compared to logistic regression and SVM.
+4. These results highlight the sensitivity of deep models to data scarcity and motivate the need for data-efficient alternatives.
+
 ---
 
 ## Implications for Further Experiments
@@ -121,10 +136,10 @@ Observed test accuracy across data fractions:
 ---
 
 ## Next Steps
-1. Implement SVM + PCA as a stronger classical low-data baseline.
-2. Compare logistic regression vs SVM behavior under identical data fractions.
-3. Introduce CNN baseline once classical non-deep baselines are established.
-4. Integrate quantum models (VQC and quantum kernel) only after classical baselines are finalized.
+1. Introduce Quantum Machine Learning (QML) models for comparison under identical low-data conditions.
+2. Implement Variational Quantum Classifier (VQC) using PennyLane.
+3. Implement Quantum Kernel methods and compare against classical SVM.
+4. Analyze differences in data efficiency, stability, and computational cost between classical and quantum approaches.
 
 ---
 

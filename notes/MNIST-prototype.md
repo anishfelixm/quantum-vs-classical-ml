@@ -5,7 +5,7 @@ First create conda environment -> activate environment -> conda install pytorch 
 ### CNN
 
 run using :
-> python -m src.trainers.classical
+> python -m src.train.train_cnn
 
 Purpose:
 - Validate training pipeline
@@ -32,7 +32,7 @@ Observations:
 ### QML
 
 run using :
-> python -m src.trainers.quantum
+> python -m src.train.train_qml
 
 Model:
 - Variational Quantum Classifier (4 qubits)
