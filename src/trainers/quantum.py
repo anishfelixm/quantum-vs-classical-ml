@@ -14,4 +14,3 @@ def train_vqc(*args):
 
 def train_qkernel(*args):
     return 0.0
-
